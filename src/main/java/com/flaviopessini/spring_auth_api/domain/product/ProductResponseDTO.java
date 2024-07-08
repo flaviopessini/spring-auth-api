@@ -1,9 +1,20 @@
 package com.flaviopessini.spring_auth_api.domain.product;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
 import java.math.BigDecimal;
 
-public record ProductResponseDTO(String id, String name, BigDecimal price) {
-    public ProductResponseDTO(Product product) {
-        this(product.getId(), product.getName(), product.getPrice());
-    }
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+public class ProductResponseDTO {
+    String id;
+
+    String name;
+
+    BigDecimal price;
 }

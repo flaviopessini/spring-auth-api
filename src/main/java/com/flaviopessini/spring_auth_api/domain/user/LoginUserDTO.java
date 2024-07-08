@@ -9,13 +9,12 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class LoginResponseDTO {
+public class LoginUserDTO {
+    @NotNull
+    @NotEmpty
+    String email;
 
     @NotNull
     @NotEmpty
-    String token;
-
-    @NotNull
-    @NotEmpty
-    Long expiresIn;
+    String password;
 }
