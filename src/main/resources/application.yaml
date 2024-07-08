@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-auth-api
+  datasource:
+    url: jdbc:postgresql://192.168.0.99:5432/auth-api
+    username: postgres
+    password: postgres
+
+api:
+  security:
+    token:
+      secret: "*MN*os@lO@0%+s1pdaW7R,ALnt)-I9{J"
